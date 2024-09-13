@@ -1,0 +1,151 @@
+\hypertarget{projeto_8cpp}{}\doxysection{/home/rodolfo/\+A\+E\+D/\+A\+ED projeto/projeto.cpp File Reference}
+\label{projeto_8cpp}\index{/home/rodolfo/AED/AED projeto/projeto.cpp@{/home/rodolfo/AED/AED projeto/projeto.cpp}}
+{\ttfamily \#include \char`\"{}func\+\_\+auxiliares.\+cpp\char`\"{}}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+{\ttfamily \#include \char`\"{}Request.\+h\char`\"{}}\newline
+Include dependency graph for projeto.\+cpp\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+list$<$ \mbox{\hyperlink{classStudent}{Student}} $>$ \mbox{\hyperlink{projeto_8cpp_afbc631313949f9daa39adaff24da7cff}{getstudentsinuc}} (string uc)
+\begin{DoxyCompactList}\small\item\em Retorna uma lista do tipo class \mbox{\hyperlink{classStudent}{Student}} com todos os estudantes de uma unidade curricular, sendo o estudante caracterizado pelo seu número UP, nome e turma a que pertence.. A complexidade é O(n) sendo \char`\"{}n\char`\"{} o tamanho do ficheiro. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classStudent}{Student}} $>$ \mbox{\hyperlink{projeto_8cpp_a30502ef41b37b6ea423e7f219f99a273}{studentsclasses}} (string studentnumber)
+\begin{DoxyCompactList}\small\item\em Retorna um vetor do tipo class \mbox{\hyperlink{classStudent}{Student}} com todas as U\+Cs e turmas a que um estudante pertence, devolvendo também o seu nome, número UP, unidade curricular e turma. A complexidade é O(n) sendo \char`\"{}n\char`\"{} o tamanho do ficheiro. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classclasses}{classes}} $>$ \mbox{\hyperlink{projeto_8cpp_a56c14341fc9e0305a0f58a975592dc12}{schedule}} (string studentnumber)
+\begin{DoxyCompactList}\small\item\em Retorna um vetor do tipo class classes com o horário do estudante. Cada elemento do vetor é constituido pela UC e turma a que o estudante pertence, dia da semana, hora de inicio da aula, a sua duração e também o tipo. A complexidade é O(n) sendo \char`\"{}n\char`\"{} o tamanho do ficheiro. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{projeto_8cpp_a2e05554c9a30e3c083c0c13f22c1656c}{Check\+Students}} (string UC, string class\+\_\+)
+\begin{DoxyCompactList}\small\item\em Retorna o número de estudantes de uma certa turma de uma UC. A complexidade é O(n) sendo \char`\"{}n\char`\"{} o tamanho da lista somelist. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classclasses__per__uc}{classes\+\_\+per\+\_\+uc}} $>$ \mbox{\hyperlink{projeto_8cpp_a25c54f20e1662c1aa1980cd012cf1192}{allclassesperuc}} (string uc)
+\begin{DoxyCompactList}\small\item\em Retorna um vetor do tipo classe \mbox{\hyperlink{classclasses__per__uc}{classes\+\_\+per\+\_\+uc}} com todas as turmas de uma certa unidade curricular. A complexidade é O(n) sendo \char`\"{}n\char`\"{} o tamanho do ficheiro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{projeto_8cpp_aef2da68394d72a15f37b15e398fc7367}{processtherequests}} (queue$<$ \mbox{\hyperlink{classRequest}{Request}} $>$ \&requests\+\_\+, vector$<$ \mbox{\hyperlink{classStudent}{Student}} $>$ \&avector\+\_\+)
+\begin{DoxyCompactList}\small\item\em Função para processar todos os pedidos de mudança de horário. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/11-\/03
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{projeto_8cpp_a25c54f20e1662c1aa1980cd012cf1192}\label{projeto_8cpp_a25c54f20e1662c1aa1980cd012cf1192}} 
+\index{projeto.cpp@{projeto.cpp}!allclassesperuc@{allclassesperuc}}
+\index{allclassesperuc@{allclassesperuc}!projeto.cpp@{projeto.cpp}}
+\doxysubsubsection{\texorpdfstring{allclassesperuc()}{allclassesperuc()}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classclasses__per__uc}{classes\+\_\+per\+\_\+uc}}$>$ allclassesperuc (\begin{DoxyParamCaption}\item[{string}]{uc }\end{DoxyParamCaption})}
+
+
+
+Retorna um vetor do tipo classe \mbox{\hyperlink{classclasses__per__uc}{classes\+\_\+per\+\_\+uc}} com todas as turmas de uma certa unidade curricular. A complexidade é O(n) sendo \char`\"{}n\char`\"{} o tamanho do ficheiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uc} & Unidade curricular. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$classes\+\_\+per\+\_\+uc$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{projeto_8cpp_a2e05554c9a30e3c083c0c13f22c1656c}\label{projeto_8cpp_a2e05554c9a30e3c083c0c13f22c1656c}} 
+\index{projeto.cpp@{projeto.cpp}!CheckStudents@{CheckStudents}}
+\index{CheckStudents@{CheckStudents}!projeto.cpp@{projeto.cpp}}
+\doxysubsubsection{\texorpdfstring{CheckStudents()}{CheckStudents()}}
+{\footnotesize\ttfamily int Check\+Students (\begin{DoxyParamCaption}\item[{string}]{UC,  }\item[{string}]{class\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Retorna o número de estudantes de uma certa turma de uma UC. A complexidade é O(n) sendo \char`\"{}n\char`\"{} o tamanho da lista somelist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em UC} & Número UP do estudante \\
+\hline
+{\em class\+\_\+} & Turma \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{projeto_8cpp_afbc631313949f9daa39adaff24da7cff}\label{projeto_8cpp_afbc631313949f9daa39adaff24da7cff}} 
+\index{projeto.cpp@{projeto.cpp}!getstudentsinuc@{getstudentsinuc}}
+\index{getstudentsinuc@{getstudentsinuc}!projeto.cpp@{projeto.cpp}}
+\doxysubsubsection{\texorpdfstring{getstudentsinuc()}{getstudentsinuc()}}
+{\footnotesize\ttfamily list$<$\mbox{\hyperlink{classStudent}{Student}}$>$ getstudentsinuc (\begin{DoxyParamCaption}\item[{string}]{uc }\end{DoxyParamCaption})}
+
+
+
+Retorna uma lista do tipo class \mbox{\hyperlink{classStudent}{Student}} com todos os estudantes de uma unidade curricular, sendo o estudante caracterizado pelo seu número UP, nome e turma a que pertence.. A complexidade é O(n) sendo \char`\"{}n\char`\"{} o tamanho do ficheiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uc} & É uma unidade curricular \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list$<$\+Student$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{projeto_8cpp_aef2da68394d72a15f37b15e398fc7367}\label{projeto_8cpp_aef2da68394d72a15f37b15e398fc7367}} 
+\index{projeto.cpp@{projeto.cpp}!processtherequests@{processtherequests}}
+\index{processtherequests@{processtherequests}!projeto.cpp@{projeto.cpp}}
+\doxysubsubsection{\texorpdfstring{processtherequests()}{processtherequests()}}
+{\footnotesize\ttfamily void processtherequests (\begin{DoxyParamCaption}\item[{queue$<$ \mbox{\hyperlink{classRequest}{Request}} $>$ \&}]{requests\+\_\+,  }\item[{vector$<$ \mbox{\hyperlink{classStudent}{Student}} $>$ \&}]{avector\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Função para processar todos os pedidos de mudança de horário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em requests\+\_\+} & Queue do tipo class \mbox{\hyperlink{classRequest}{Request}} com todos os pedidos de mudança de horários \\
+\hline
+{\em avector\+\_\+} & Vetor do tipo \mbox{\hyperlink{classStudent}{Student}} com todos os estudantes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{projeto_8cpp_a56c14341fc9e0305a0f58a975592dc12}\label{projeto_8cpp_a56c14341fc9e0305a0f58a975592dc12}} 
+\index{projeto.cpp@{projeto.cpp}!schedule@{schedule}}
+\index{schedule@{schedule}!projeto.cpp@{projeto.cpp}}
+\doxysubsubsection{\texorpdfstring{schedule()}{schedule()}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classclasses}{classes}}$>$ schedule (\begin{DoxyParamCaption}\item[{string}]{studentnumber }\end{DoxyParamCaption})}
+
+
+
+Retorna um vetor do tipo class classes com o horário do estudante. Cada elemento do vetor é constituido pela UC e turma a que o estudante pertence, dia da semana, hora de inicio da aula, a sua duração e também o tipo. A complexidade é O(n) sendo \char`\"{}n\char`\"{} o tamanho do ficheiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em studentnumber} & Número UP do estudante \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$classes$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{projeto_8cpp_a30502ef41b37b6ea423e7f219f99a273}\label{projeto_8cpp_a30502ef41b37b6ea423e7f219f99a273}} 
+\index{projeto.cpp@{projeto.cpp}!studentsclasses@{studentsclasses}}
+\index{studentsclasses@{studentsclasses}!projeto.cpp@{projeto.cpp}}
+\doxysubsubsection{\texorpdfstring{studentsclasses()}{studentsclasses()}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classStudent}{Student}}$>$ studentsclasses (\begin{DoxyParamCaption}\item[{string}]{studentnumber }\end{DoxyParamCaption})}
+
+
+
+Retorna um vetor do tipo class \mbox{\hyperlink{classStudent}{Student}} com todas as U\+Cs e turmas a que um estudante pertence, devolvendo também o seu nome, número UP, unidade curricular e turma. A complexidade é O(n) sendo \char`\"{}n\char`\"{} o tamanho do ficheiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em studentnumber} & Número UP do estudante \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Student$>$ 
+\end{DoxyReturn}

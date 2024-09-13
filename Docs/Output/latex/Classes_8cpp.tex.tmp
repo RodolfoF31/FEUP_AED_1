@@ -1,0 +1,23 @@
+\hypertarget{Classes_8cpp}{}\doxysection{/home/rodolfo/\+A\+E\+D/\+A\+ED projeto/\+Classes.cpp File Reference}
+\label{Classes_8cpp}\index{/home/rodolfo/AED/AED projeto/Classes.cpp@{/home/rodolfo/AED/AED projeto/Classes.cpp}}
+{\ttfamily \#include \char`\"{}classes.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for Classes.\+cpp\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/11-\/04
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
